@@ -59,6 +59,12 @@
 					</div>
 				</section>
 				<section>
+					<h1>test?</h1>
+					<div class="stretch">
+						<monaco-editor language="html" url="./index.html"></monaco-editor>
+					</div>
+				</section>
+				<section>
 					<div class="stretch">
 						<monaco-editor references='["test.d.ts"]'
 													 language="html">
@@ -72,6 +78,19 @@
 		<small ng-bind-html="k.r"></small>
 	</ui-select-choices>
 </ui-select>
+							</script>
+						</monaco-editor>
+					</div>
+				</section>
+				<section>
+					<div class="stretch">
+						<monaco-editor language="java">
+							<script type="text/plain" class="monaco-code">
+public class MyClass {
+	public void doSomething() {
+		System.out.println("hello");
+	}
+}
 							</script>
 						</monaco-editor>
 					</div>
@@ -106,7 +125,6 @@ export class test {
 				width: 1200,
 				height: 800,
 				margin: .1,
-				viewDistance: 2,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
